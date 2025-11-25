@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Durga's Portfolio</title>
+    <meta name="description" content="Durga's Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fontAwesome.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/light-box.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-main.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <script src="{{ url_for('static', filename='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
+</head>
+
+<body>
+
+<div class="sequence">
+    <div class="seq-preloader">
+        <svg width="39" height="16" viewBox="0 0 39 16" xmlns="http://www.w3.org/2000/svg" class="seq-preload-indicator">
+            <g fill="#F96D38">
+                <path class="seq-preload-circle seq-preload-circle-1" d="M3.999,12.687c0,1.657,0.313,2.138,2.048,2.138c1.261,0,1.738-0.313,1.738-1.914V3.999h2.384v9.318c0,2.137-0.938,3.347-3.82,3.347c-2.879,0-4.319-1.21-4.319-3.347V3.999h2.384V12.687z"></path>
+            </g>
+        </svg>
+    </div>
+</div>
+
+<!-- Navigation -->
+<nav>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="">
+    </div>
+    <div class="mini-logo">
+        <img src="{{ url_for('static', filename='img/mini_logo.png') }}" alt="">
+    </div>
+    <ul>
+        <li><a href="#1"><i class="fa fa-home"></i> <em>Home</em></a></li>
+        <li><a href="#3"><i class="fa fa-briefcase"></i> <em>Projects</em></a></li>
+         <li><a href="#4"><i class="fa fa-envelope"></i> <em>Contact</em></a></li>
+    </ul>
+</nav>
+
+<div class="slides">
+
+    <!-- Home Slide -->
+    <div class="slide" id="1">
+        <div class="content first-content">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="author-image">
+                            <img src="{{ url_for('static', filename='img/author_image.png') }}" alt="Author Image">
+                        </div>
+                    </div>
+
+                    <div class="col-md-9">
+                        <h2>Durga</h2>
+                        <p>
+                            I'm Durga — a developer currently learning app development and building real-world projects. 
+                            I've created a simple web scraper that collects headlines from top news channels, built a REST API using Flask, 
+                            and worked on data visualization projects. I'm also exploring Flutter and recently built a basic finger-tap game.
+                        </p>
+                        <div class="main-btn"><a href="#3">My Projects</a></div>
+                        <div class="fb-btn"><a rel="nofollow" href="https://www.instagram.com/spark_the_shift_/">Follow on Instagram</a></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Slide -->
+    <div class="slide" id="2">
+        <div class="content second-content">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="left-content">
+                            <h2>About Me</h2>
+                            <p>
+                                I'm a passionate developer exploring both web and app development. I enjoy learning new technologies and building practical applications. 
+                                My goal is to combine clean UI design with functional backend systems.
+                            </p>
+                            <p>
+                                Currently, I am learning Flutter for mobile apps and enhancing my skills in Python, Flask, and data visualization.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="right-image">
+                            <img src="{{ url_for('static', filename='img/about_image.jpg') }}" alt="About Image">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Slide -->
+    <div class="slide" id="3">
+        <div class="content third-content">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <!-- Project 1 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="{{ url_for('static', filename='img/first_big_item.jpg') }}" data-lightbox="image-1">
+                                    <div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2>Web Scraper</h2>
+                                            <p>Scrapes top headlines using Python.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="image">
+                                    <img src="{{ url_for('static', filename='img/first_item.jpg') }}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="{{ url_for('static', filename='img/second_big_item.jpg') }}" data-lightbox="image-1">
+                                    <div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2>REST API with Flask</h2>
+                                            <p>REST API serving data dynamically.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="image">
+                                    <img src="{{ url_for('static', filename='img/second_item.jpg') }}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="{{ url_for('static', filename='img/third_big_item.jpg') }}" data-lightbox="image-1">
+                                    <div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2>Data Visualization</h2>
+                                            <p>Exploring data insights.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="image">
+                                    <img src="{{ url_for('static', filename='img/third_item.jpg') }}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="{{ url_for('static', filename='img/fourth_big_item.jpg') }}" data-lightbox="image-1">
+                                    <div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2>Flutter Game</h2>
+                                            <p>Simple finger-tap mobile game.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="image">
+                                    <img src="{{ url_for('static', filename='img/fourth_item.jpg') }}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Slide -->
+    <div class="slide" id="4">
+        <div class="fifth-content">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        
+
+                        <!-- Set the action to your contact endpoint or leave empty if handled by JS -->
+                        <form id="contact" action="/contact" method="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <input name="name" type="text" class="form-control" placeholder="Your name..." required>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <input name="email" type="email" class="form-control" placeholder="Your email..." required>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <input name="subject" type="text" class="form-control" placeholder="Subject..." required>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <textarea name="message" rows="6" class="form-control" placeholder="Your message..." required></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="btn">Send Now</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="content">
+        <p>&copy; 2025 Durga. Template: 
+            <a rel="nofollow" href="https://templatemo.com/tm-512-moonlight">Moonlight</a></p>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- FIXED jQuery fallback -->
+<!-- JS -->
+
+{% raw %}
+<script>
+window.jQuery || document.write(
+    '<script src="/static/js/vendor/jquery-1.11.2.min.js"><\/script>'
+);
+</script>
+{% endraw %}
+
+<script src="{{ url_for('static', filename='js/vendor/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/vendor/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
